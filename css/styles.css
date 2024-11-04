@@ -1,0 +1,397 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+    --pink--: #df949d;
+    --cream--: #f7efda;
+    --lt-green--: #97976a;
+    --green--: #1d2a26;
+}
+
+/* Fonts */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav, form, label, input, textarea, button {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Rajdhani", sans-serif;
+    color: #737d7a;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: var(--green--);
+    color: var(--cream--);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--cream--);
+}
+
+.hamburger {
+    display: none;
+    margin: 15px 15px 15px auto;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--cream--);
+}
+
+.socials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(50vh - 100px);
+}
+
+.socials img {
+    width: 30px;
+    margin: 5px;
+}
+
+/* Home */
+#home {
+    display: flex;
+    background: url(../images/header-img.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    color: var(--cream--);
+}
+
+.intro {
+    background: #171c1ad1;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.intro p {
+    color: var(--cream--);
+}
+
+.intro-button {
+    background: var(--cream--);
+}
+
+.intro-button a p {
+    color: var(--green--);
+}
+
+.button {
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 100px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+/* About */
+#about {
+    padding: 15px;
+    background: var(--cream--);
+}
+
+.center-block {
+    text-align: center;
+}
+
+.spacer {
+    display: block;
+    margin: 10px auto;
+    width: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--pink--);
+}
+
+.about-grid {
+    display: grid;
+    max-width: 1080px;
+    grid-template-columns: 45% 45%;
+    margin: 15px auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.language-blocks {
+    display: inline-block;
+    background: #ebe4c4;
+    padding: 5px 10px;
+    margin: 5px 2px;
+    border-radius: 5px;
+}
+
+#about a {
+    color: var(--green--);
+    text-decoration: none;
+}
+
+.contact-button {
+    background: var(--lt-green--);
+    margin: 20px auto 20px 0;
+}
+
+.contact-button a p {
+    color: var(--cream--);
+}
+
+/* Projects */
+#projects {
+    padding: 15px;
+}
+
+.project-item {
+    display: flex;
+    max-width: 1080px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-item img {
+    max-width: 60%;
+}
+
+.project-button {
+    background: var(--lt-green--);
+    margin: 20px 0;
+}
+
+.project-button a p {
+    color: var(--cream--);
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/contact-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.contact-content {
+    max-width: 1080px;
+    width: 80%;
+    background: #171c1ad1;
+    padding: 20px;
+    color: var(--cream--);
+}
+
+.contact-content p {
+    color: var(--cream--);
+}
+
+/* Form */
+form {
+    width: 90%;
+    max-width: 769px;
+    background: var(--cream--);
+    color: var(--green--);
+    margin: 15px auto;
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin: 20px 0 5px 0;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#message {
+    border: none;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: max-content;
+    padding: 15px 40px;
+    border-radius: 100px;
+    border: none;
+    background: var(--green--);
+    color: var(--cream--);
+    margin: 20px 0 5px auto;
+}
+
+/* Footer */
+footer {
+    background: var(--green--);
+    color: var(--cream--);
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px 15px 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+}
+
+.footer-break {
+    width: 90%;
+    margin: 50px auto 20px auto;
+}
+
+/* Mobile Viewport */
+@media screen and (max-width: 600px) {
+    /* Nav */
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.active {
+        display: initial;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        flex-direction: column;
+        background: var(--green--);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 25px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .socials {
+        display: none;
+    }
+    
+    /* About */
+    .about-grid {
+        grid-template-columns: 70%;
+        text-align: center;
+    }
+
+    .contact-button {
+        margin: 20px auto;
+    }
+    
+    /* Projects */
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-button {
+        margin: 20px auto;
+    }
+
+    /* Contact */
+    button {
+        margin: 20px auto 5px auto;
+    }
+
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+        padding: 40px 10px 0 10px;
+    }
+
+    .footer-item:last-child {
+        margin: 20px 0;
+    }
+
+    .footer-break {
+        margin: 15px auto;
+    }
+}
