@@ -8,6 +8,7 @@
 /* Color Palette */
 :root {
     --pink--: #df949d;
+    --dark-pink--: #c86c5e;
     --cream--: #f7efda;
     --lt-green--: #97976a;
     --green--: #1d2a26;
@@ -18,12 +19,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, nav, form, label, input, textarea, button {
+h1, h2, nav, form, label, input, textarea, button {
     font-family: "Rajdhani", sans-serif;
     font-weight: 400;
 }
 
-p {
+p, ul, li, h3, h4, h5, h6 {
     font-family: "Rajdhani", sans-serif;
     color: #737d7a;
 }
@@ -159,6 +160,7 @@ nav {
     margin: 15px auto;
     grid-gap: 20px;
     justify-content: center;
+    align-items: stretch;
 }
 
 .language-blocks {
@@ -170,8 +172,13 @@ nav {
 }
 
 #about a {
-    color: var(--green--);
+    color: var(--pink--);
     text-decoration: none;
+    transition: color 0.2s;
+}
+
+#about a:hover {
+    color: var(--dark-pink--);
 }
 
 .contact-button {
@@ -181,6 +188,18 @@ nav {
 
 .contact-button a p {
     color: var(--cream--);
+}
+
+.experience-item, .education-item {
+    margin-top: 10px;
+}
+
+.experience-item h3 {
+    font-weight: bold;
+}
+
+.experience-item ul, .education-item ul {
+    list-style-type: square;
 }
 
 /* Projects */
